@@ -14,8 +14,8 @@ function SomeFunction(arg1, arg2, arg3) {
 }
 
 
-Some.prototype.checkProto = function(from) {
-    console.log(this.name);
+Some.prototype.checkInProto = function() {
+    console.log(this.arg1);
 }
 
 var newObjWithNew = New(SomeFunction)('newObjWithNew', 01, true);
