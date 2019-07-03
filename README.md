@@ -1,0 +1,1 @@
+# js_new_keyword_functional_polyfill_mimic
