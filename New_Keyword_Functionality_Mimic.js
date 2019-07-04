@@ -1,4 +1,6 @@
 function New(fun) {
+    const type = typeof fun;
+    if (type !== 'function') throw new Error(`Expected function, got ${type}`)
     const obj = Object.create(fun.prototype);
     return function() {
         var args = Array.prototype.slice.call(arguments);
