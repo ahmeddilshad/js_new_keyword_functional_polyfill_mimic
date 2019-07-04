@@ -3,7 +3,7 @@ function New(fun) {
     if (type !== 'function') throw new Error(`Expected function, got ${type}`)
     const obj = Object.create(fun.prototype);
     return function() {
-        var args = Array.prototype.slice.call(arguments);
+        const args = Array.prototype.slice.call(arguments);
         obj.constructor.apply(obj, args);
         return obj;
     }
